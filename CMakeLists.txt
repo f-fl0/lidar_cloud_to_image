@@ -35,6 +35,7 @@ find_package(catkin COMPONENTS
   std_msgs
   pcl_ros
   cv_bridge
+  image_transport
 )
 
 
@@ -43,7 +44,7 @@ find_package(catkin COMPONENTS
 ###################################
 catkin_package(
  INCLUDE_DIRS src
- CATKIN_DEPENDS roscpp sensor_msgs std_msgs pcl_ros cv_bridge
+ CATKIN_DEPENDS roscpp sensor_msgs std_msgs pcl_ros cv_bridge image_transport
  DEPENDS PCL
 )
 
